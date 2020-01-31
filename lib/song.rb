@@ -2,7 +2,8 @@ require 'pry'
 require_relative '../config/environment'
 
 class Song
-  extend Memorable
+  extend Memorable::ClassMethods
+  include Memorable::InstanceMethods
   include Paramable
 
   
